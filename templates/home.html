@@ -1,18 +1,10 @@
 {% extends "_base.html" %}
-
+{% load static %}
 {% block title %}Home{% endblock title %}
 
 {% block content %}
+
     <h1>This is our home page.</h1>
-    {% if user.is_authenticated  %}
-        <p>Hi, you are logged in via {{ user.email }} as {{ user.username }}</p>
-        <p>
-            <a href="{% url 'logout'%}">Log out</a>
-        </p>
-    {%  else  %}
-        <p>Please log in</p>
-        <a href="{% url 'login' %}">Log in</a>
-         or
-        <a href="{% url 'signup'%}">Sign Up</a>
-    {% endif %}
+    <img class="bookcover" src="{% static 'images/dfp.jpg' %}">
+
 {% endblock content %}
