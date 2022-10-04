@@ -12,3 +12,7 @@ h1 {
     height: 300px;
     width: auto;
 }
+
+.container {
+    padding-left: 1rem;
+}
