@@ -15,4 +15,19 @@ h1 {
 
 .container {
     padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  background: black;
+  height: 40px;
+}
+
+.navbar-section{
+  padding: 15px;
 }
