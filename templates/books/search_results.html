@@ -1,0 +1,25 @@
+{% extends "_base.html" %}
+
+{% block title %}Search{% endblock title %}
+
+{% block content %}
+    <h1>Search Results</h1>
+    <h2>In books:</h2>
+    {% for book in search_result.0 %}
+        <div>
+            <h3><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></h3>
+            <p>Author: {{ book.author }}</p>
+            <p>Price: $ {{ book.price }}</p>
+        </div>
+    {% endfor %}
+
+        <h2>In reviews:</h2>
+    {% for review in search_result.1 %}
+        <div>
+
+            <p>Author: {{ review.author }}</p>
+            <p>Review: {{ review.review }}</p>
+            <p>From: <a href="{{ review.book.get_absolute_url }}">{{ review.book.title }}</a></p>
+        </div>
+    {% endfor %}
+{% endblock content %}
