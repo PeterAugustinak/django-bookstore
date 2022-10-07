@@ -16,7 +16,6 @@
         <h2>In reviews:</h2>
     {% for review in search_result.1 %}
         <div>
-
             <p>Author: {{ review.author }}</p>
             <p>Review: {{ review.review }}</p>
             <p>From: <a href="{{ review.book.get_absolute_url }}">{{ review.book.title }}</a></p>
