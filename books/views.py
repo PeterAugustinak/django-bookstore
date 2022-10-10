@@ -41,5 +41,4 @@ class SearchResultsListView(ListView):
 
         search_result_review = Review.objects.filter(review__icontains=query)
 
-
         return [search_result_book, search_result_review]

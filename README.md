@@ -20,7 +20,7 @@ Dockerized version:
 
 ## Test user
 You can log in with test user:
-- name: testuser1
+- name: testuser123@email.com
 - password: testpass123
 
 ## Technologies used:
@@ -34,4 +34,3 @@ You can log in with test user:
 - ![img.png](images/img.png)
 - book detail page
 - ![img1.png](images/img1.png)
-
