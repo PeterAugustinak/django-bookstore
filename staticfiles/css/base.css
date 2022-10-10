@@ -1,13 +1,132 @@
 body {
-    min-height: 75rem;
-    padding-top: 4.5rem;
+    min-height: 800px;
+    padding-top: 1px;
+    padding-left: 1px;
+    border-block: #1b1b1b;
+    border-color: #1b1b1b;
+    background-color: lightblue;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+
 }
 
 h1 {
-    color: red;
+    color: black;
+    font-size: 30px;
+}
+
+h3 {
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+}
+
+img {
+    border: 2px;
+    border-color: black;
+}
+
+p {
+    margin-block-end: 1px;
+    margin-block-start: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    margin-block-start: 10px;
 }
 
 .bookcover {
     height: 300px;
     width: auto;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.container {
+    padding-left: 1rem;
+    margin-left: 1rem;
+    margin-top: 1px;
+}
+
+.navbar-my {
+  margin-top: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  background: black;
+  height: 50px;
+  border-style: solid;
+  border-color: darkblue;
+  border-radius: 10px;
+}
+
+.navbar-section {
+  padding: 35px;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.nav-link {
+    color: #81d4fa;
+    font-size: 22px;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px darkblue;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: floralwhite;
+}
+
+.nav-link-main {
+    font-size: 22px;
+    text-decoration: none;
+    color: #81d4fa;
+    -webkit-text-stroke: 0.5px darkblue;
+    font-weight: bold;
+    --link-hover-color: red;
+}
+
+.nav-link-main:hover {
+    color: #f7f7f7;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 3px;
+
+}
+
+.card-header, .card-body {
+    min-height: 25px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.card-header {
+    display: flex;
+    background-color: lightgoldenrodyellow;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.btn-success {
+    background-color: aquamarine;
+    font-weight: bold;
+    border-style: solid;
+    border-color: darkblue;
+    border-radius: 10px;
 }

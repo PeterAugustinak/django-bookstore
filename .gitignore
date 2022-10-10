@@ -132,3 +132,4 @@ dmypy.json
 
 # prod docker
 docker-compose-prod.yml
+staticfiles/*
